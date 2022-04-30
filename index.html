@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Myissues payment</title>
+  <link rel='shortcut icon' href='assets/images/logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-light-1">
+
+  <!-- === payment-pagination section start === -->
+  <div class="payment-pagination bg-white">
+    <div class="container">
+      <nav>
+        <ul class="pagination align-items-center pagination-lg">
+          <li class="page-item">
+            <a class="page-link ps-0" href="#"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              <i class="fas fa-check-circle"></i> Order Details &nbsp;&nbsp; <span class="arrow"> > </span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              <span class="number">2</span> Confirm & pay &nbsp;&nbsp; <span class="arrow"> > </span>
+            </a>
+          </li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">
+              <span class="number">3</span> Submit Requirements 
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- ===//end of payment-pagination section === -->
+
+
+  <!-- === payment-method section start === -->
+  <section class="payment-method py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-xl-8">
+          <div class="payment-option bg-light-2 rounded overflow-hidden">
+            <h2 class="heading p-4">Payment Options</h2>
+            <div class="accordion accordion-flush" id="payment-accordion">
+              <div class="accordion-item">
+                <div class="accordion-header border-top shadow-sm p-4" id="flush-headingOne">
+                  <div class="form-check align-items-center">
+                    <input class="form-check-input" type="radio" name="payment-option" id="m-card" checked data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <label class="form-check-label" for="m-card">
+                      Cardit & Debit Cards <img src="assets/images/payment/M-Card.png" alt="card" class="img-fluid">
+                    </label>
+                  </div>
+                </div>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#payment-accordion">
+                  <div class="accordion-body">
+                    <div class="py-3">
+                      <div class="row gy-4">
+                        <div class="col-lg-6">
+                          <label>Card Number</label>
+                          <input type="text" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="row gx-2 gy-4">
+                            <div class="col-lg-6">
+                              <label>Expiration Date</label>
+                              <input type="date" class="form-control form-control-lg">
+                            </div>
+                            <div class="col-lg-6">
+                              <label>Security Code <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="left" title="3 digit number located on the back of credit card or debit card "></i></label>
+                              <input type="text" class="form-control form-control-lg">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <label>First Name</label>
+                          <input type="text" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-lg-6">
+                          <label>Last Name</label>
+                          <input type="text" class="form-control form-control-lg">
+                        </div>
+                      </div>
+  
+                      <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" value="" id="default-method">
+                        <label class="form-check-label" for="default-method">
+                          save as default  <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="right" title="This will be your default payment method for future payments on Myissues."></i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header shadow-sm p-4" id="flush-headingTwo">
+                    <div class="form-check align-items-center collapsed"  >
+                      <input class="form-check-input" type="radio" name="payment-option" id="paypal" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <label class="form-check-label" for="paypal">
+                        <img src="assets/images/payment/Paypal-logo.png" alt="paypal" class="img-fluid">
+                      </label>
+                    </div>
+                </div>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#payment-accordion">
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Remember for future payments
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <!-- === payment-summary start === -->
+          <div class="payment-summary border rounded">
+            <div class="p-3 border-bottom">
+              <div class="user-profile d-flex align-items-center">
+                <div class="flex-shrink-0 profile-img-box">
+                  <img src="assets/images/payment/home-pic.png" alt="user-img" class="img-fluid profile-img">
+                </div>
+                <div class="profile-info ps-xxl-3 ps-2">
+                  <p>Profile ID: <span class="text-pink">1000</span></p>
+                  <p>Name: <span class="text-black">Priya</span></p>
+                  <p>Age: <span class="text-black">43</span></p>
+                  <p>City: <span class="text-black">Toronto, ON</span></p>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between ongoing-support">We appreciate your ongoing support. <span class="ps-4">$661.99</span></div>
+            </div>
+
+            <div class="p-3 bg-white">
+              <p class="promocode-text" data-bs-toggle="collapse" data-bs-target="#promocode">Enter promo code <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="right" title="Promo codes are valid for limited periods and are subject to modification or cancellation at any time at Myissues sole discretion. "></i></p>
+              <div id="promocode" class="accordion-collapse collapse">
+                <div class="input-group btn-group-lg mt-2">
+                  <input type="text" class="form-control" placeholder="Promo code gose here">
+                  <button class="btn btn-secondary">Apply</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="d-flex justify-content-between service-fee">
+                <p class="service-fee-text">Service fee <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="This helps us operate our platform and offer 24/7 customer support for your Community."></i></p>
+                <p class="ps-2 service-fee-amount">$5.00</p>
+              </div>
+
+              <hr>
+              
+              <h4 class="d-flex justify-content-between total-amount">
+                Total <span>CA$698.40</span>
+              </h4>
+              <button class="btn btn-lg btn-cyan w-100">Confirm & Pay</button>
+              <div class="text-center">
+                <p class="ssl-secure pt-2 pb-4"><i class="fas fa-lock"></i> SSL Secure Payment</p>
+                <p class="total-charge pb-2">You will be charged CA$698.40. Total amount includes all fees.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- ===//end of payment-summary === -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===//end of payment-method section === -->
+  
+  <!-- === footer section start === -->
+  <footer class="payment-method-footer border-top p-xl-4 p-3">
+    <div class="container">
+      <p>Payments are processed by Myissues International Ltd., Myissues Limited, and Myissues Inc. See <a href="#" class="text-cyan">Payment Terms</a></p>
+    </div>
+  </footer>
+  <!-- ===//end of footer section === -->
+ 
+
+ 
+
+
+  <script src="assets/vendor/bootstrap/js/popper.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>

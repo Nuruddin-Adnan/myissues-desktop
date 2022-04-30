@@ -1,0 +1,12 @@
+// ########## config css start ##########
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $color-gray-2;
+}
+
+@media(min-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+// ##########// end of config css ##########

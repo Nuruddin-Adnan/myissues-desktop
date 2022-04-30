@@ -1,0 +1,260 @@
+/*=== abstracts css start === */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/*===// end of abstracts css === */
+/*=== base css start === */
+@import url(../abstracts/_mixins.scss);
+@import url(../abstracts/_mixins.scss);
+@import url(../abstracts/_mixins.scss);
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #626468;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.bg-light-1 {
+  background-color: #fafafa;
+}
+
+.bg-light-2 {
+  background-color: #f4f2f2;
+}
+
+.bg-cyan {
+  background-color: #006f85;
+}
+
+.text-cyan {
+  color: #006f85;
+}
+
+.text-pink {
+  color: #962582;
+}
+
+.text-black {
+  color: #000;
+}
+
+/*===// end of base css === */
+/*=== components css start === */
+.btn-cyan {
+  background-color: #006f85;
+  color: #fff;
+}
+
+.btn-cyan:hover {
+  background-color: #005a6c;
+  color: #fff;
+}
+
+.payment-pagination .page-item .page-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #006f85;
+  background-color: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payment-pagination .page-item .page-link i {
+  font-size: 30px;
+  padding-right: 5px;
+}
+
+.payment-pagination .page-item .page-link .number {
+  width: 30px;
+  height: 30px;
+  background-color: #006f85;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1199px) {
+  .payment-pagination .page-item .page-link {
+    font-size: 14px;
+    white-space: nowrap;
+    padding: .75rem;
+  }
+  .payment-pagination .page-item .page-link i {
+    font-size: 20px;
+  }
+  .payment-pagination .page-item .page-link .number {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.payment-pagination .page-item.disabled .page-link {
+  color: #626468;
+}
+
+.payment-pagination .page-item.disabled .page-link .number {
+  background-color: #c4c5ca;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip-inner {
+  text-align: left;
+  max-width: 300px;
+  background-color: #404145;
+  padding: 0.5rem;
+}
+
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before, .bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #404145;
+}
+
+.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before, .bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #404145;
+}
+
+.payment-method .payment-option label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #626468;
+}
+
+.payment-method .payment-option .form-control {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.payment-method .payment-option .form-check-input:checked {
+  background-color: #006f85;
+  border-color: #006f85;
+}
+
+.payment-method .payment-option .heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #626468;
+}
+
+.payment-method .payment-option .heading label {
+  font-weight: 400;
+}
+
+.payment-method .payment-option #payment-accordion .accordion-item {
+  background-color: transparent;
+}
+
+.payment-method .payment-option #payment-accordion .accordion-item .accordion-header {
+  background-color: #faf9f9;
+}
+
+.payment-method .payment-summary .user-profile .profile-img-box {
+  width: 30%;
+}
+
+.payment-method .payment-summary .user-profile .profile-img-box .profile-img {
+  width: 100%;
+  height: 100%;
+  max-width: 160px;
+  max-height: 160px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.payment-method .payment-summary .user-profile .profile-info p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #626468;
+}
+
+.payment-method .payment-summary .ongoing-support {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.payment-method .payment-summary .promocode-text i, .payment-method .payment-summary .service-fee-text i {
+  color: #c4c5ca;
+}
+
+.payment-method .payment-summary .service-fee-amount {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.payment-method .payment-summary .total-amount {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4a4a4a;
+  padding-bottom: 40px;
+}
+
+.payment-method .payment-summary .ssl-secure {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.payment-method .payment-summary .total-charge {
+  font-size: 16px;
+  font-weight: 400;
+  color: #626468;
+}
+
+.payment-method-footer {
+  font-size: 16px;
+  font-weight: 400;
+  color: #626468;
+}
+
+.payment-method-footer a:hover {
+  color: #962582;
+}
+
+/*===// end of components css === */
+/*=== layouts css start === */
+/*===// end of layouts css === */
+/*# sourceMappingURL=style.css.map */
