@@ -17,10 +17,24 @@
 @import 'components/payment-pagination';
 @import 'components/tooltip';
 @import 'components/payment-method';
+@import 'components/business-advertising';
+
+// blog component
+@import 'components/blog/blog-banner';
+@import 'components/blog/blog-info';
+@import 'components/blog/blog-navigation';
+@import 'components/blog/blog-article-heading';
+@import 'components/blog/blog-article';
 /*===// end of components css === */
 
 
 /*=== layouts css start === */
 @import 'layouts/navbar';
+@import 'layouts/blog-header';
 @import 'layouts/footer';
 /*===// end of layouts css === */
+
+
+/*=== pages css start === */
+@import 'pages/blog/home';
+/*===// end of pages css === */

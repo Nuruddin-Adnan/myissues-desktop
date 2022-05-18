@@ -9,3 +9,12 @@
        color: $color-white;
     }
 }
+
+.btn-yellow {
+    background-color: $color-yellow;
+    color: $color-white;
+
+    &:hover {
+       background-color: darken($color-yellow, 5);
+    }
+}

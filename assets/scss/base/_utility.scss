@@ -1,17 +1,20 @@
 // ########## utility css start ##########
-// background
+////########### background
 .bg-light-1 {
     background-color: $color-light-1;
 }
 .bg-light-2 {
     background-color: $color-light-2;
 }
+.bg-light-4{
+    background-color: $color-light-4;
+}
 .bg-cyan {
     background-color: $color-cyan;
 }
 
 
-// color
+//########### color
 .text-cyan {
     color: $color-cyan;
 }
@@ -21,4 +24,21 @@
 .text-black {
     color: $color-black;
 }
+
+
+//########### width
+.w-lg-50 {
+    @media (min-width: 992px) {
+        width: 50% !important;
+        max-width: 90%;
+    }
+}
+.w-lg-90 {
+    @media (min-width: 992px) {
+        width: 90% !important;
+        max-width: 90%;
+    }
+}
+
+
 // ##########// end of utility css ##########

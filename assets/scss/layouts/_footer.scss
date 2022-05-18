@@ -1,0 +1,68 @@
+@import url(../abstracts/_mixins.scss);
+
+.footer {
+    background: $color-white url(../images/footer-BG.png) no-repeat bottom center/cover;
+    padding-top: 40px;
+
+    .footer-description {
+        @include font-style(22px, 300, $color-black);
+        line-height: 36px;
+        margin: 30px 0;
+    }
+    .link-heading {
+        @include font-style(28px, 600, $color-black);
+        border-bottom: 1px solid $color-black;
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-top: 35px;
+    }
+    ul {
+        margin-bottom: 30px;
+        .footer-link {
+            @include font-style(22px, 300, $color-black);
+            margin: 8px 0;
+            display: inline-block;
+            &:hover {
+                color: $color-cyan;
+            }
+        }
+        &.pink.social-link {
+            .footer-link {
+                color: $color-pink;
+                margin: 5px 0;
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+        &.cyan.contact-list {
+            .footer-link {
+                color: $color-cyan;
+                i {
+                    display: block;
+                    padding-right: 15px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+   
+    .btn.outline-info {
+        @include font-style(18px, 500, $color-cyan);
+        border: 1px solid $color-cyan;
+        border-radius: 25px;
+        &:hover {
+            background-color: $color-cyan;
+            color: $color-white;
+        }
+    }
+
+    .copyright {
+        background: rgba(#006f85, 0.05);
+        padding: 30px 0 20px 0;
+        margin-top: 20px;
+        .copyright-text {
+            @include font-style(22px, 300, $color-black);
+        }
+    }
+}
