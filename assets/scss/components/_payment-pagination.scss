@@ -3,6 +3,11 @@
 
 // ########## payment-pagination css start ##########
 .payment-pagination{
+    @media(min-width: 1600px) {
+        .container {
+          max-width: 90%;
+        }
+    }
     .page-item{
         .page-link{
             @include font-style(20px, 500, $color-cyan);

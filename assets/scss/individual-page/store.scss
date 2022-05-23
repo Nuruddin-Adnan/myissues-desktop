@@ -1,0 +1,37 @@
+/*=== abstracts css start === */
+@import '../abstracts/fonts';
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+/*===// end of abstracts css === */
+
+
+
+/*=== base css start === */
+@import '../base/global';
+@import '../base/config';
+@import '../base/utility';
+/*===// end of base css === */
+
+
+
+
+/*=== components css start === */
+@import '../components/buttons';
+@import '../components/business-advertising';
+
+// blog component
+@import '../components/blog/blog-banner';
+@import '../components/blog/blog-info';
+@import '../components/blog/blog-navigation';
+/*===// end of components css === */
+
+
+/*=== layouts css start === */
+@import '../layouts/blog-header';
+@import '../layouts/footer';
+/*===// end of layouts css === */
+
+
+/*=== pages css start === */
+@import '../pages/store';
+/*===// end of pages css === */

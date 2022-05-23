@@ -1,12 +1,104 @@
+/*=== abstracts css start === */
+@import '../abstracts/fonts';
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+/*===// end of abstracts css === */
+
+
+
+/*=== base css start === */
+@import '../base/global';
+@import '../base/utility';
+/*===// end of base css === */
+
+
+
+/*=== components css start === */
+@import '../components/buttons';
+@import '../components/tooltip';
+/*===// end of components css === */
+
+
+
+// ########## config css start ##########
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $color-gray-2;
+  }
+  
+@media(min-width: 1600px) {
+    .container {
+        max-width: 90%;
+    }
+}
+  // ##########// end of config css ##########
+
+
+  // ########## payment-pagination css start ##########
+.payment-pagination{
+    .page-item{
+        .page-link{
+            @include font-style(20px, 500, $color-cyan);
+            background-color: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 30px;
+                padding-right: 5px;
+            }
+
+            .number {
+                width: 30px;
+                height: 30px;
+                background-color: $color-cyan;
+                border-radius: 50%;
+                display: inline-block;
+                font-size: 20px;
+                color: $color-white;
+                text-align: center;
+                line-height: 30px;
+                margin-right: 5px;
+            }
+
+            @media (max-width: 1199px) {
+                font-size: 14px;
+                white-space: nowrap;
+                padding: .75rem;
+
+                i {
+                    font-size: 20px;
+                }
+
+                .number {
+                    width: 20px;
+                    height: 20px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+
+        &.disabled{
+            .page-link{
+                color: $color-gray-2;
+
+                .number{
+                    background-color: $color-light-3;
+                }
+            }
+        }
+    }
+}
+// ##########// end of payment-pagination css ##########
+
+
 @import url(../abstracts/_mixins.scss);
 
 // ########### pament method start ###########
 .payment-method{
-    @media(min-width: 1600px) {
-        .container {
-          max-width: 90%;
-        }
-    }
     .payment-option{
         label {
             @include font-style(18px, 500, $color-gray-2);
